@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
+
+    <style>
+        body{
+            background-color: rgba(194, 238, 251, 0.993);
+        }
+        form{
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 1.5em;
+            text-align: center;
+            background-color: rgb(250, 250, 250);
+        }
+      
+    </style>
+    <title>Procurar CEP</title>
+</head>
+<body>
+    <div   class="container text-cnter">
+
+    <h1 class="container p-3 my-3 bg-primary text-white" style="text-align: center">Procura de CEP</h1>
+    
+    <form action="">
+    <div class="form-group">
+
+    <label for="cep">CEP</label>    <br>
+    <input class="container-fluid" type="text" onblur='buscarEndereço(this)' value="" style="text-align: center; font-weight: bolder; color: black;" id="cep" name="cep" size="100" maxlength="9"
+    required> 
+
+    </div>
+    <div class="form-group">
+
+    <label for="logradouro">Logradouro</label>    <br>
+    <input class="container-fluid" type="text" style="text-align: center; font-weight: bolder; color: black;" size="100" id="logradouro" name="logradouro" disabled >
+   
+    </div>
+
+    <div class="form-group">
+
+    <label for="complemento">Complemento</label>    <br>
+    <input class="container-fluid" type="text" style="text-align: center; font-weight: bolder; color: black;" size="100" id="complemento" name="complemento" disabled>
+    
+    </div>
+
+    <div class="form-group">
+
+    <label for="bairro">Bairro</label>    <br>
+    <input class="container-fluid" type="text" style="text-align: center; font-weight: bolder; color: black;" size="100" id="bairro" name="bairo" disabled>
+    
+    </div>
+
+    <div class="form-group">
+  
+    <label for="localidade">Localidade</label>    <br>
+    <input class="container-fluid" type="text" style="text-align: center; font-weight: bolder; color: black;" size="100" id="localidade" name="localidade" disabled>
+    
+    </div>
+
+    <div class="form-group">
+    
+    <label for="número">IBGE</label>    <br>
+    <input class="container-fluid" type="text" style="text-align: center; font-weight: bolder; color: black;" size="100" id="ibge" name="ibge" disabled >
+    
+    </div>
+    
+    </form>
+</div>
+</body>
+</html>
